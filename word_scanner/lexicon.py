@@ -1,4 +1,4 @@
-def scanner(raw_sentence):
+def scan(raw_sentence):
 	lexicon = {
 		'north': 'direction', 
 		'south': 'direction', 
