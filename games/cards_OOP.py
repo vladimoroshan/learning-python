@@ -319,6 +319,6 @@ def main2():
         print('%s happens one time in %.2f' % (label, p))
 
 if __name__ == '__main__':
-  main1()
+	main1()
 	main2()
 
