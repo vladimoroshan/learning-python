@@ -2,12 +2,11 @@
 """ Program walks through a folder tree and searches for files 
 	with a certain file extension (such as .pdf or .jpg).
 
-	Usage:  source - ('str')the path of a folder from which start search 
-						and deleting
-			max_size - ('int') in Mb. Files greater size than max_size will be
-					    deleted.
-			ext - ('str') extension, txt, pdf, jpg, etc
+	Usage:  source - ('str')the path of a folder from which start search and deleting
+		max_size - ('int') in Mb. Files greater size than max_size will be deleted.
+		ext - ('str') extension, txt, pdf, jpg, etc
 """ 
+
 import os
 
 current_dir = os.getcwd()
