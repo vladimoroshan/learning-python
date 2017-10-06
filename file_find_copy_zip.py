@@ -1,3 +1,4 @@
+#! python3
 """ Program walks through a folder tree and searches for files 
 	with a certain file extension (such as .pdf or .jpg). 
 	And copy these files from whatever location they are in to a new folder.
@@ -42,6 +43,7 @@ def selective_copy(ext, source=current_dir, destination=current_dir + '/copied')
 		new_zip.write(destination+'/'+path, compress_type=zipfile.ZIP_DEFLATED)	
 	new_zip.close()
 
-selective_copy('txt')
+if __name__ == "__main__":
+	selective_copy('txt')
 
 
