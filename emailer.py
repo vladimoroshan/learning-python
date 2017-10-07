@@ -16,11 +16,8 @@
 """
 
 from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
 import sys
 import time
-
-
 
 def emailer(address, text):
 	url = 'https://mail.google.com/mail'
