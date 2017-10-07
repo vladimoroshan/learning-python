@@ -6,7 +6,7 @@
 	the PDF by trying every possible English word until it finds one that works.
 
 	Pass filename that need to crack in command line arguments.
-	Important file english_words.txt and encrypted file	should be in a working dir
+	Important file english_words.txt and encrypted file should be in a working dir
 """
 
 import PyPDF2
@@ -19,7 +19,7 @@ def decrypter(filename):
 
 	english_words = open('english_words.txt')
 	list_of_words = english_words.read().split()
-	print(len(list_of_words))
+	
 	for word in list_of_words:
 		if pdf_reader.decrypt(word) == 1:
 			print("The password is " + word)
