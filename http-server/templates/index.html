@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Alt-D upload</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/javascript" src="main.js" defer></script>
+  </head>
+
+  <body>
+    <h1>Fill the form and hit submit</h1>
+
+    <form
+      id="testForm"
+      method="POST"
+      action="http://localhost:8000/ "
+      enctype="multipart/form-data"
+    >
+      <label for="textInput">Text input</label>
+      <input id="textInput" name="textInput" required /><br />
+      <br />
+
+      <label for="singleFileInput">Single file input</label>
+      <input
+        id="singleFileInput"
+        name="singleFileInput"
+        type="file"
+        required
+      /><br />
+      <br />
+
+      <label for="multipleFileInput">Multiple file input</label>
+      <input
+        id="multipleFileInput"
+        name="multipleFileInput"
+        type="file"
+        multiple
+        required
+      /><br />
+      <br />
+
+      <button id="submitBtn" type="submit">Submit</button>
+    </form>
+  </body>
+</html>

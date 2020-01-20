@@ -1,0 +1,27 @@
+h1 {
+  text-align: center;
+}
+
+form {
+    padding: 100px 200px 0px 200px
+}
+
+input:required:invalid {
+    border: 2px dashed red;
+}
+
+input:required:valid {
+    border: 2px solid black;
+}
+
+label {
+    font-size: 21px;
+}
+
+input {
+    font-size: 22px;
+}
+
+button {
+    font-size: 22px
+}
